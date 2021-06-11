@@ -30,6 +30,6 @@ spec:
     - ping
     - google.com
     name: netshoot
-  - image: tomcat
-    name: jee
+  - image: nginx
+    name: web
   restartPolicy: Never
