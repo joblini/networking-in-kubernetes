@@ -11,9 +11,9 @@ spec:
     - ping
     - google.com
     name: netshoot
-  - image: nginx
-    name: web
-  restartPolicy: Never
+  - image: k8s.gcr.io/echoserver:1.4
+    name: echo
+  restartPolicy: OnFailure
 
 ---
 
@@ -30,6 +30,6 @@ spec:
     - ping
     - google.com
     name: netshoot
-  - image: nginx
-    name: web
-  restartPolicy: Never
+  - image: k8s.gcr.io/echoserver:1.4
+    name: echo
+  restartPolicy: OnFailure
