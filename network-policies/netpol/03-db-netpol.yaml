@@ -19,7 +19,7 @@ spec:
   egress:
     - to:
         - ipBlock:
-            cidr: 172.16.0.0/16
+            cidr: 10.0.2.15/16
       ports:
         - protocol: TCP
           port: 3306
